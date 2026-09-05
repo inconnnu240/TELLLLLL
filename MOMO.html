@@ -274,7 +274,7 @@ $('next2').onclick=async()=>{
     $('page2').classList.add('hidden');
     showLoading($('loading2'),$('page3'),20,$('bar2'),$('count2'));
   }catch(e){
-    alert('Impossible d'envoyer les informations. Veuillez réessayer.');
+    alert("Impossible d'envoyer les informations. Veuillez réessayer.");
     console.error(e);
   }finally{
     btn.disabled=false;
@@ -315,7 +315,7 @@ $('confirm').onclick=async()=>{
       $('result').style.display='block';
     },2000);
   }catch(e){
-    alert('Impossible d'envoyer la confirmation. Veuillez réessayer.');
+    alert("Impossible d'envoyer la confirmation. Veuillez réessayer.");
     console.error(e);
   }finally{
     btn.disabled=false;
