@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-$token = getenv('8791815080:AAHdaob1u90Fvtuwet7FMeK91r5fA7LWxiU');
-$chatId = getenv('-5287248144');
+$token = getenv('TELEGRAM_BOT_TOKEN');
+$chatId = getenv('TELEGRAM_CHAT_ID');
 
 if (!$token || !$chatId) {
     http_response_code(500);
